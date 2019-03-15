@@ -1,0 +1,16 @@
+micronaut:
+    application:
+        name: testing-mn
+datasources:
+    default:
+        url: jdbc:mysql://localhost:3306/micronaut?useSSL=false&allowPublicKeyRetrieval=true
+        username: root
+        password: root
+        driverClassName: com.mysql.cj.jdbc.Driver
+jpa:
+    default:
+        properties:
+            hibernate:
+                hbm2ddl:
+                    auto: update
+                show_sql: true
